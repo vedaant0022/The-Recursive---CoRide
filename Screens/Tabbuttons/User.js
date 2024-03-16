@@ -179,7 +179,7 @@ export default function App() {
 
        </View></TouchableOpacity>
        <TouchableOpacity
-       onPress={()=>{navigation.navigate('Login')}}
+      //  onPress={()=>{navigation.navigate('Log')}}
        
       
        >

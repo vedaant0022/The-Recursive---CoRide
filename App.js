@@ -9,6 +9,7 @@ import React from 'react'
     import Start from './Screens/Start';
     import Signup from './Screens/Signup';
     import Login from './Screens/Login';
+    import Logout from './Screens/Logout';
     ;
    
     const Stack = createNativeStackNavigator();
@@ -18,12 +19,13 @@ import React from 'react'
         <NavigationContainer>
            
         <Stack.Navigator 
-        initialRouteName='Tab'
+        initialRouteName='Start'
         screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Tab" component={TabNav} />
           <Stack.Screen name="Start" component={Start} />
           <Stack.Screen name="Signup" component={Signup} />
           <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Logout" component={Logout} />
         </Stack.Navigator>
     
         </NavigationContainer>
