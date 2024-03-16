@@ -65,7 +65,7 @@ const TabNav = () => {
               source={{uri:'https://cdn-icons-png.flaticon.com/512/3416/3416075.png'}}
               style={{height:60,width:60,tintColor:'#000000',backgroundColor:'#fff',borderRadius:50}}
               />
-              <Text style={{fontWeight:'400',color: focused ? 'red':'grey'}}>Add Ride</Text>
+              <Text style={{fontWeight:'400',color: focused ? '#000000':'grey'}}>Add Ride</Text>
             </View>
           ) 
         }}/> 

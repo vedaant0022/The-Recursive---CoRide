@@ -1,11 +1,45 @@
 import { View, Text, ImageBackground, Image, TextInput, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 
 
 const Login = () => {
 
-  const navigation = useNavigation()
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
+    const navigation = useNavigation()
+
+    const authenticate = () => {
+
+
+        const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    
+    const raw = JSON.stringify({
+      "username": username,
+      "password": password
+    });
+    
+    const requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow"
+    };
+    
+    fetch("https://1d7b-182-74-22-86.ngrok-free.app/api/authenticate", requestOptions)
+      .then((response) => response.json())
+      .then((result) => {
+         if(result?.error==="Invalid credentials") alert("Invalid creds")
+         else navigation.reset({
+        index:0,
+      routes:[{name:"Tab"}],})
+        console.log(result)})
+      .catch((error) => console.error(error));
+      
+    
+      }
 
   return (
 
@@ -16,7 +50,7 @@ const Login = () => {
         style={{height:'100%',width:'100%'}}>
 
 
-        <View style={{top:'50%',flexDirection:'row',left:'14%'}}>
+        <View style={{top:170,flexDirection:'row',left:'14%'}}>
             <View>
                 <Image
                 source={{uri:'https://cdn-icons-png.flaticon.com/512/456/456212.png'}}
@@ -28,12 +62,14 @@ const Login = () => {
             </View>
         </View>
 
-        <View style={{top:'32%',alignContent:'center',alignSelf:'center'}}>
+        <View style={{marginTop:'62%',alignContent:'center',alignSelf:'center'}}>
             <View style={{borderWidth:1,borderColor:'#fff',width:320,height:40,borderRadius:12}}>
                 <TextInput
                 placeholder='Enter Your Username'
                 style={{color:'#fff',textAlign:'center'}}
                 placeholderTextColor={'white'}
+                value={username}
+                onChangeText={setUsername}
                 
                 />
             </View>
@@ -43,12 +79,16 @@ const Login = () => {
                 placeholder='Enter Your Password'
                 style={{color:'#fff',textAlign:'center'}}
                 placeholderTextColor={'white'}
+                value={password}
+                onChangeText={setPassword}
                 
                 />
             </View>
 
-            <View style={{top:'18%',left:'25%',borderWidth:1,width:130,borderColor:'#fff',backgroundColor:'#fff',height:40,borderRadius:15}}>
-                <TouchableOpacity>
+            <View style={{top:'18%',left:'25%',borderWidth:0.1,width:130,borderColor:'grey',backgroundColor:'#71f884',height:40,borderRadius:15}}>
+                <TouchableOpacity
+                onPress={()=>{authenticate()}}
+                >
                     <Text style={{color:'black',fontSize:21,fontWeight:'900',textAlign:'center',paddingTop:'2.5%'}}>Login</Text>
                 </TouchableOpacity>
             </View>

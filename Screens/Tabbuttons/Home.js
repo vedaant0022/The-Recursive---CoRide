@@ -246,6 +246,9 @@ export default function App() {
             <Text style={{color:'grey',marginLeft:15,marginTop:5}}>Seamless trips together</Text>
           </View>
           </TouchableOpacity>
+          <View style={{height:350}}>
+
+          </View>
           
           </ScrollView>
       </ScrollView>
