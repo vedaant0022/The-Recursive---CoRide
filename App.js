@@ -18,7 +18,7 @@ import React from 'react'
         <NavigationContainer>
            
         <Stack.Navigator 
-        initialRouteName='Start'
+        initialRouteName='Tab'
         screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Tab" component={TabNav} />
           <Stack.Screen name="Start" component={Start} />

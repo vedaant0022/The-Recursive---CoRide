@@ -28,7 +28,7 @@ const TabNav = () => {
                     bottom:0.1,
                     borderRadius:4,
                     elevation:10,
-                    height:'8%',
+                    height:'12%',
                     left:3,
                     right:3}
                   }}>
@@ -63,9 +63,9 @@ const TabNav = () => {
             <View style={{alignItems:'center',top:-25}}>
               <Image
               source={{uri:'https://cdn-icons-png.flaticon.com/512/3416/3416075.png'}}
-              style={{height:60,width:60,tintColor: focused ? '#000000':'grey'}}
+              style={{height:60,width:60,tintColor:'#000000',backgroundColor:'#fff',borderRadius:50}}
               />
-              {/* <Text style={{fontWeight:'400',color: focused ? 'red':'grey'}}>Dinning</Text> */}
+              <Text style={{fontWeight:'400',color: focused ? 'red':'grey'}}>Add Ride</Text>
             </View>
           ) 
         }}/> 
