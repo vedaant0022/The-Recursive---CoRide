@@ -48,7 +48,7 @@ const TabNav = () => {
           tabBarIcon: ({focused})=> (
             <View style={{alignItems:'center'}}>
               <Image
-              source={{uri:'https://cdn-icons-png.flaticon.com/512/15305/15305714.png'}}
+              source={{uri:'https://cdn-icons-png.flaticon.com/512/3/3467.png'}}
               style={{height:25,width:25,tintColor: focused ? '#000000':'grey'}}
               />
               <Text style={{fontWeight:'400',color: focused ? '#000000':'grey'}}>Service</Text>
@@ -74,7 +74,7 @@ const TabNav = () => {
           tabBarIcon: ({focused})=> (
             <View  style={{alignItems:'center'}}>
               <Image
-              source={{uri:'https://cdn-icons-png.flaticon.com/512/2666/2666513.png'}}
+              source={{uri:'https://cdn-icons-png.flaticon.com/512/721/721550.png'}}
               style={{height:25,width:25,tintColor: focused ? '#000000':'grey'}}
               />
               <Text style={{fontWeight:'400',color: focused ? '#000000':'grey'}}>Rewards</Text>
