@@ -89,7 +89,7 @@ const Login = () => {
                 <TouchableOpacity
                 onPress={()=>{authenticate()}}
                 >
-                    <Text style={{color:'black',fontSize:21,fontWeight:'700',textAlign:'center',paddingTop:'2.5%'}}>Login</Text>
+                    <Text style={{color:'black',fontSize:21,fontWeight:'700',textAlign:'center',paddingTop:'4.5%'}}>Login</Text>
                 </TouchableOpacity>
             </View>
 

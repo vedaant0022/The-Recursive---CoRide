@@ -60,7 +60,7 @@ const Signup = () => {
             <View style={{borderWidth:1,borderColor:'#fff',width:320,height:40,borderRadius:12}}>
                 <TextInput
                 placeholder='Enter Your Name'
-                style={{color:'#fff',textAlign:'center'}}
+                style={{color:'#fff',textAlign:'center',paddingTop:'3%'}}
                 placeholderTextColor={'white'}
                 value={user}
                 onChangeText={setuser}
@@ -70,7 +70,7 @@ const Signup = () => {
             <View style={{borderWidth:1,borderColor:'#fff',width:320,height:40,borderRadius:12,marginTop:'8%'}}>
                 <TextInput
                 placeholder='Enter Your Password'
-                style={{color:'#fff',textAlign:'center'}}
+                style={{color:'#fff',textAlign:'center',paddingTop:'3%'}}
                 placeholderTextColor={'white'}
                 value={password}
                 onChangeText={setPassword}
@@ -81,7 +81,7 @@ const Signup = () => {
             <View style={{borderWidth:1,borderColor:'#fff',width:320,height:40,borderRadius:12,marginTop:'8%'}}>
                 <TextInput
                 placeholder='Confirm Password'
-                style={{color:'#fff',textAlign:'center'}}
+                style={{color:'#fff',textAlign:'center',paddingTop:'3%'}}
                 placeholderTextColor={'white'}
                 value={confirmpassword}
                 onChangeText={setconfirmpassword}
@@ -93,7 +93,7 @@ const Signup = () => {
                 <TouchableOpacity
                 onPress={()=>{postsignup()}}
                 >
-                    <Text style={{color:'black',fontSize:21,fontWeight:'900',textAlign:'center',paddingTop:'2.5%'}}>Signup</Text>
+                    <Text style={{color:'black',fontSize:21,fontWeight:'700',textAlign:'center',paddingTop:'6.5%'}}>Signup</Text>
                 </TouchableOpacity>
             </View>
 

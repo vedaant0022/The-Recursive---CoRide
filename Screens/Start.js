@@ -22,7 +22,7 @@ const Start = () => {
                         <TouchableOpacity 
                         onPress={()=>{navigation.navigate('Signup')}}
                         >
-                            <Text style={{color:'#000000',fontSize:21,textAlign:'center',paddingTop:'5%',fontWeight:'800'}}>Signup</Text>
+                            <Text style={{color:'#000000',fontSize:21,textAlign:'center',paddingTop:'9%',fontWeight:'800'}}>Signup</Text>
                         </TouchableOpacity>
                     </View>
 
@@ -30,7 +30,7 @@ const Start = () => {
                         <TouchableOpacity
                         onPress={()=>{navigation.navigate('Login')}}
                         >
-                            <Text style={{color:'#fff',fontSize:21,textAlign:'center',paddingTop:'4%',fontWeight:'800'}}>Login</Text>
+                            <Text style={{color:'#fff',fontSize:21,textAlign:'center',paddingTop:'9%',fontWeight:'800'}}>Login</Text>
                         </TouchableOpacity>
                     </View>
 

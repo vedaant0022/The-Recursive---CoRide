@@ -179,7 +179,9 @@ export default function App() {
 
        </View></TouchableOpacity>
        <TouchableOpacity
-      //  onPress={()=>{navigation.navigate('Log')}}
+      //  onPress={()=>{// Inside your ThirdScreen component
+      //   navigation.navigate('Home', { screen: 'Login' });
+      //   }}
        
       
        >

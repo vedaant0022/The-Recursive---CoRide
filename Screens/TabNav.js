@@ -12,6 +12,7 @@ import Service from './Tabbuttons/Service';
 
 const TabNav = () => {
   const Tab = createBottomTabNavigator();
+
   return (
     <NavigationContainer
     independent={true}
@@ -98,5 +99,6 @@ const TabNav = () => {
     </NavigationContainer>
   );
 }
+
 
 export default TabNav
