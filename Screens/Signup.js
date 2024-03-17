@@ -29,7 +29,9 @@ const Signup = () => {
     
     fetch("https://1d7b-182-74-22-86.ngrok-free.app/signup", requestOptions)
       .then((response) => response.json())
-      .then((result) => console.log(result))
+      .then((result) => {
+        alert("Signup Successful!!")
+        console.log(result)})
       .catch((error) => console.error(error));
           
       }

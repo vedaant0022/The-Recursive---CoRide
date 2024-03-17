@@ -12,15 +12,18 @@ export default function App() {
   const filterdata = (item) => {
     if(Userinput === ""){
         return(
-          <View style={{ marginLeft:'3%',flexDirection: 'row',top:15 }}>
+          <View style={{ marginLeft:'3%',flexDirection: 'row',top:20}}>
           <TouchableOpacity>
-            <View style={{ borderWidth: 1, height: 150, width: 360, paddingLeft: 20, paddingTop: 5, backgroundColor: '#fff', borderRadius: 13, borderColor: '#fff' }}>
-              <Text style={{ fontSize: 18, fontWeight: '700' }}>Name: {item?.OwnerName}</Text>
-              <Text style={{ fontSize: 18, fontWeight: '700' }}>Model: {item?.Model}</Text>
-              <Text style={{ fontSize: 18, fontWeight: '700' }}>RC No: {item?.Numberplate}</Text>
-              <Text style={{ fontSize: 18, fontWeight: '700' }}>Contact: {item?.Contact}</Text>
-              <Text style={{ fontSize: 18, fontWeight: '700' }}>Start: {item?.start}</Text>
-              <Text style={{ fontSize: 18, fontWeight: '700' }}>End: {item?.end}</Text>
+            <View style={{marginBottom:1}}>
+            <View style={{ borderWidth: 1, height: 160, width: 360, paddingLeft: 20, paddingTop: 5, backgroundColor: '#fff', borderRadius: 13, borderColor: '#fff' }}>
+              <Text style={{ fontSize: 18, fontWeight: '500' }}>Name: {item?.OwnerName}</Text>
+              <Text style={{ fontSize: 18, fontWeight: '500' }}>Model: {item?.Model}</Text>
+              <Text style={{ fontSize: 18, fontWeight: '500' }}>RC No: {item?.Numberplate}</Text>
+              <Text style={{ fontSize: 18, fontWeight: '500' }}>Contact: {item?.Contact}</Text>
+              <Text style={{ fontSize: 18, fontWeight: '500' }}>Start: {item?.start}</Text>
+              <Text style={{ fontSize: 18, fontWeight: '500' }}>End: {item?.end}</Text>
+              <Text style={{ fontSize: 18, fontWeight: '500' }}>Fare: {item?.fare}</Text>
+            </View>
             </View>
             </TouchableOpacity>
             <View>
@@ -34,15 +37,18 @@ export default function App() {
 
         if (item && item.end && Userinput && item.end.toLowerCase().includes(Userinput.toLowerCase())) {
           return (
-            <View style={{ marginLeft:'3%',flexDirection: 'row',top:15 }}>
+            <View style={{ marginLeft:'3%',flexDirection: 'row',top:15 ,marginBottom:20}}>
             <TouchableOpacity>
-              <View style={{ borderWidth: 1, height: 150, width: 360, paddingLeft: 20, paddingTop: 5, backgroundColor: '#fff', borderRadius: 13, borderColor: '#fff',marginBottom:23 }}>
-                <Text style={{ fontSize: 18, fontWeight: '700' }}>Name: {item?.OwnerName}</Text>
-                <Text style={{ fontSize: 18, fontWeight: '700' }}>Model: {item?.Model}</Text>
-                <Text style={{ fontSize: 18, fontWeight: '700' }}>RC No: {item?.Numberplate}</Text>
-                <Text style={{ fontSize: 18, fontWeight: '700' }}>Contact: {item?.Contact}</Text>
-                <Text style={{ fontSize: 18, fontWeight: '700' }}>Start: {item?.start}</Text>
-                <Text style={{ fontSize: 18, fontWeight: '700' }}>End: {item?.end}</Text>
+              <View style={{marginBottom:1}}>
+              <View style={{ borderWidth: 1, height: 160, width: 360, paddingLeft: 20, paddingTop: 5, backgroundColor: '#fff', borderRadius: 13, borderColor: '#fff',marginBottom:23 }}>
+                <Text style={{ fontSize: 18, fontWeight: '500' }}>Name: {item?.OwnerName}</Text>
+                <Text style={{ fontSize: 18, fontWeight: '500' }}>Model: {item?.Model}</Text>
+                <Text style={{ fontSize: 18, fontWeight: '500' }}>RC No: {item?.Numberplate}</Text>
+                <Text style={{ fontSize: 18, fontWeight: '500' }}>Contact: {item?.Contact}</Text>
+                <Text style={{ fontSize: 18, fontWeight: '500' }}>Start: {item?.start}</Text>
+                <Text style={{ fontSize: 18, fontWeight: '500' }}>End: {item?.end}</Text>
+                <Text style={{ fontSize: 18, fontWeight: '500' }}>Fare: {item?.fare}</Text>
+              </View>
               </View>
               </TouchableOpacity>
               <View>
@@ -89,7 +95,7 @@ export default function App() {
       <Map/>
       </View>
       
-      <View>
+      <View style={{}}>
       <View style={{display:'flex',flexDirection:'row',backgroundColor:'white',width:'95%',height:50,alignSelf:'center',marginTop:20,borderRadius:15,padding:10,}}>
         <TextInput
         placeholderTextColor={'black'}

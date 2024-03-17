@@ -66,7 +66,7 @@ const Login = () => {
             <View style={{borderWidth:1,borderColor:'#fff',width:320,height:40,borderRadius:12}}>
                 <TextInput
                 placeholder='Enter Your Username'
-                style={{color:'#fff',textAlign:'center'}}
+                style={{color:'#fff',textAlign:'center',marginTop:12}}
                 placeholderTextColor={'white'}
                 value={username}
                 onChangeText={setUsername}
@@ -77,7 +77,7 @@ const Login = () => {
             <View style={{borderWidth:1,borderColor:'#fff',width:320,height:40,borderRadius:12,marginTop:'8%'}}>
                 <TextInput
                 placeholder='Enter Your Password'
-                style={{color:'#fff',textAlign:'center'}}
+                style={{color:'#fff',textAlign:'center',marginTop:12}}
                 placeholderTextColor={'white'}
                 value={password}
                 onChangeText={setPassword}
@@ -89,7 +89,7 @@ const Login = () => {
                 <TouchableOpacity
                 onPress={()=>{authenticate()}}
                 >
-                    <Text style={{color:'black',fontSize:21,fontWeight:'900',textAlign:'center',paddingTop:'2.5%'}}>Login</Text>
+                    <Text style={{color:'black',fontSize:21,fontWeight:'700',textAlign:'center',paddingTop:'2.5%'}}>Login</Text>
                 </TouchableOpacity>
             </View>
 

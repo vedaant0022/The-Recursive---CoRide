@@ -43,7 +43,7 @@ const Service = () => {
           <View style={{borderWidth:0,height:140,width:320,backgroundColor:'orange',borderRadius:20,flexDirection:'row'}}>
             <View style={{flexDirection:'column'}}>
             <Text style={{fontSize:18,marginLeft:10,marginTop:10,color:'white',fontWeight:'700'}}>Ride on your terms</Text>
-            <Text style={{color:'white',marginLeft:10,marginTop:60}}>Try Uber Auto </Text>
+            <Text style={{color:'white',marginLeft:10,marginTop:60}}>Try CoRide Auto </Text>
             </View>
             <View style={{flexDirection:'row'}}>
             <Image style={{marginTop:20,marginLeft:20}}
@@ -55,7 +55,7 @@ const Service = () => {
           <View style={{borderWidth:0,height:140,width:320,backgroundColor:'green',borderRadius:20,flexDirection:'row'}}>
             <View style={{flexDirection:'column'}}>
             <Text style={{fontSize:18,marginLeft:10,marginTop:10,color:'white',fontWeight:'700'}}>Ride on your terms</Text>
-            <Text style={{color:'white',marginLeft:10,marginTop:60}}>Try Uber Auto </Text>
+            <Text style={{color:'white',marginLeft:10,marginTop:60}}>Try CoRide Auto </Text>
             </View>
             <View style={{flexDirection:'row'}}>
             <Image style={{marginTop:20,marginLeft:20}}
@@ -67,7 +67,7 @@ const Service = () => {
           <View style={{borderWidth:0,height:140,width:320,backgroundColor:'blue',borderRadius:20,flexDirection:'row'}}>
             <View style={{flexDirection:'column'}}>
             <Text style={{fontSize:18,marginLeft:10,marginTop:10,color:'white',fontWeight:'700'}}>Ride on your terms</Text>
-            <Text style={{color:'white',marginLeft:10,marginTop:60}}>Try Uber Auto </Text>
+            <Text style={{color:'white',marginLeft:10,marginTop:60}}>Try CoRide Auto </Text>
             </View>
             <View style={{flexDirection:'row'}}>
             <Image style={{marginTop:20,marginLeft:20}}
@@ -79,7 +79,7 @@ const Service = () => {
           <View style={{borderWidth:0,height:140,width:320,backgroundColor:'red',borderRadius:20,flexDirection:'row'}}>
             <View style={{flexDirection:'column'}}>
             <Text style={{fontSize:18,marginLeft:10,marginTop:10,color:'white',fontWeight:'700'}}>Ride on your terms</Text>
-            <Text style={{color:'white',marginLeft:10,marginTop:60}}>Try Uber Auto </Text>
+            <Text style={{color:'white',marginLeft:10,marginTop:60}}>Try CoRide Auto </Text>
             </View>
             <View style={{flexDirection:'row'}}>
             <Image style={{marginTop:20,marginLeft:20}}
@@ -137,8 +137,8 @@ const Service = () => {
           <View>
             
             <Image style={{marginTop:20,marginLeft:10,borderRadius:20}}
-            source={{uri:'https://cdn.zeebiz.com/hindi/sites/default/files/2023/04/12/132961-auto-ola-uberfreepik.jpg?im=FitAndFill=(1200,900)',height:150,width:250}}/>
-            <Text style={{marginLeft:15,fontSize:16,fontWeight:'500',marginTop:10}}>Go with Uber Auto </Text>
+            source={{uri:'https://cdn.dribbble.com/users/4693582/screenshots/16969011/media/68d5e199b631abef5069cd1b6902dda5.png',height:150,width:250}}/>
+            <Text style={{marginLeft:15,fontSize:16,fontWeight:'500',marginTop:10}}>Go with CoRide Auto </Text>
             <Text style={{color:'grey',marginLeft:15,marginTop:5}}>Doorstep pick-up, No bargaining</Text>
           </View>
           </TouchableOpacity>
