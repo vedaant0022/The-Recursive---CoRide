@@ -6,38 +6,42 @@ const Service = () => {
     <SafeAreaView>
       <ScrollView>
       <View>
+
+        <View>
         <View style={{marginTop:30,marginLeft:20}}>
         <Text style={{fontSize:37,fontWeight:'700'}}>CoRide</Text>
       </View> 
+    
+      </View>
       <View style={{flexDirection:'row',alignSelf:'center',marginTop:50}}>
             <TouchableOpacity style={{borderWidth:0,width:'22%',padding:10,height:100,borderRadius:15,backgroundColor:'white',shadowColor:'#fff',shadowOpacity:0.5,shadowOffset:1}}>
               
                 <Text style={{alignSelf:'center',fontSize:14,fontWeight:'600'}}>Trip</Text>
                  <Image style={{alignSelf:'center',marginTop:10}}
-                 source={{uri:'https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_538/v1568070387/assets/b5/0a5191-836e-42bf-ad5d-6cb3100ec425/original/UberX.png',height:50,width:70}}/>
+                 source={{uri:'https://imgs.search.brave.com/P5qoi_wRV95WTwQwyje-3M-lT67zlN0zmGLTBiRWEhc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/dmVjdG9yc3RvY2su/Y29tL2kvcHJldmll/dy0xeC8wOS83NS9j/YXItdmVjdG9yLTE3/MDA5NzUuanBn',height:50,width:70}}/>
             </TouchableOpacity>
             <TouchableOpacity style={{borderWidth:0,width:'22%',padding:10,height:100,borderRadius:15,backgroundColor:'white',shadowColor:'#fff',shadowOpacity:0.5,shadowOffset:1,marginLeft:10}}>
               
                 <Text style={{alignSelf:'center',fontSize:14,fontWeight:'600'}}>Inter-city</Text>
                  <Image style={{alignSelf:'center',marginTop:10}}
-                 source={{uri:'https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_538/v1568070387/assets/b5/0a5191-836e-42bf-ad5d-6cb3100ec425/original/UberX.png',height:50,width:70}}/>
+                 source={{uri:'https://imgs.search.brave.com/P5qoi_wRV95WTwQwyje-3M-lT67zlN0zmGLTBiRWEhc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/dmVjdG9yc3RvY2su/Y29tL2kvcHJldmll/dy0xeC8wOS83NS9j/YXItdmVjdG9yLTE3/MDA5NzUuanBn',height:50,width:70}}/>
             </TouchableOpacity>
             <TouchableOpacity style={{borderWidth:0,width:'22%',padding:10,height:100,borderRadius:15,backgroundColor:'white',shadowColor:'#fff',shadowOpacity:0.5,shadowOffset:1,marginLeft:10}}>
               
                 <Text style={{alignSelf:'center',fontSize:14,fontWeight:'600'}}>Rentals</Text>
                  <Image style={{alignSelf:'center',marginTop:10}}
-                 source={{uri:'https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_538/v1568070387/assets/b5/0a5191-836e-42bf-ad5d-6cb3100ec425/original/UberX.png',height:50,width:70}}/>
+                 source={{uri:'https://imgs.search.brave.com/P5qoi_wRV95WTwQwyje-3M-lT67zlN0zmGLTBiRWEhc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/dmVjdG9yc3RvY2su/Y29tL2kvcHJldmll/dy0xeC8wOS83NS9j/YXItdmVjdG9yLTE3/MDA5NzUuanBn',height:50,width:70}}/>
             </TouchableOpacity>
             <TouchableOpacity style={{borderWidth:0,width:'22%',padding:10,height:100,borderRadius:15,backgroundColor:'white',shadowColor:'#fff',shadowOpacity:0.5,shadowOffset:1,marginLeft:10}}>
               
                 <Text style={{alignSelf:'center',fontSize:12,fontWeight:'600'}}>Group ride</Text>
                  <Image style={{alignSelf:'center',marginTop:10}}
-                 source={{uri:'https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_538/v1568070387/assets/b5/0a5191-836e-42bf-ad5d-6cb3100ec425/original/UberX.png',height:50,width:70}}/>
+                 source={{uri:'https://imgs.search.brave.com/P5qoi_wRV95WTwQwyje-3M-lT67zlN0zmGLTBiRWEhc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/dmVjdG9yc3RvY2su/Y29tL2kvcHJldmll/dy0xeC8wOS83NS9j/YXItdmVjdG9yLTE3/MDA5NzUuanBn',height:50,width:70}}/>
             </TouchableOpacity>
             
           </View>
 
-           <ScrollView showsHorizontalScrollIndicator={false}
+           {/* <ScrollView showsHorizontalScrollIndicator={false}
            horizontal>
            <TouchableOpacity style={{margin:15,marginTop:50}}>
           <View style={{borderWidth:0,height:140,width:320,backgroundColor:'orange',borderRadius:20,flexDirection:'row'}}>
@@ -86,10 +90,10 @@ const Service = () => {
             source={{uri:'https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_638/v1648432113/assets/6e/86fff4-a82a-49b9-8b0b-54b341ea0790/original/Uber_Auto_312x208_pixels_Mobile.png',height:90,width:90}}/></View>
           </View>
           </TouchableOpacity>
-          </ScrollView>
+          </ScrollView> */}
 
           <View>
-            <Text style={{fontWeight:'600',fontSize:20,marginLeft:10}}>Plan your next trip</Text>
+            <Text style={{fontWeight:'600',fontSize:20,marginLeft:10,marginTop:35}}>Plan your next trip</Text>
           </View>
           <ScrollView showsHorizontalScrollIndicator={false}
           horizontal>
